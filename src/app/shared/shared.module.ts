@@ -10,7 +10,12 @@ import { TranslateModule } from '@ngx-translate/core';
     CommonModule,
     TranslateModule
   ],
-  declarations: [SideBarComponent],
-  exports:[SideBarComponent, TranslateModule]
+  declarations: [
+    SideBarComponent
+  ],
+  exports:[
+    SideBarComponent,
+    TranslateModule
+  ]
 })
 export class SharedModule { }
