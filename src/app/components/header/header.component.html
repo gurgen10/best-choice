@@ -3,11 +3,12 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="language position-absolute">
-    <select id="language" #lang (change)="switchLang(lang.value)">
-      <option value="am"><button >{{ 'Armenian' | translate }}</button></option>
-      <option value="ru"><button >{{ 'Russian' | translate }}</button></option>
-      <option value="en"><button >{{ 'English' | translate }}</button></option>
+  <div class="language position-absolute d-flex">
+      <p class="lang-name">{{ langName | translate}}</p> 
+    <select class="selectpicker" id="language" #lang (change)="switchLang(lang.value)">
+      <option value="am"> &nbsp; </option>
+      <option value="ru"> &nbsp;</option>
+      <option value="en"> &nbsp;</option>
     </select>
   </div>
   <div class="collapse navbar-collapse col-8 text-center" id="navbarNav">

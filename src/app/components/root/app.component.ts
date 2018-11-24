@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, AfterViewInit} from '@angular/core';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
@@ -15,9 +15,9 @@ export class AppComponent implements OnDestroy {
   constructor(private router: Router) {
     this.subscriptions = router.events.subscribe((val) => {
       if (this.router.url == '/') {
-        this.showSideBar = false
+        this.showSideBar = false;
       } else {
-        this.showSideBar = true
+        this.showSideBar = true;
       }
     });
   }

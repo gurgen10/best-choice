@@ -2,3 +2,38 @@
 @import "~src/scss/core/variables";
 @import "~src/scss/core/mixins";
 @import "~src/scss/base/fonts";
+
+.dropdown.bootstrap-select, dropdown-menu.show{
+  width: 55px !important; 
+  right: 80px;
+  padding: 0; 
+ 
+}
+.bootstrap-select .dropdown-menu li:nth-child(1) a {
+    background-image: url('./assets/images/langIcons/am.png');
+    background-size: contain;
+    background-position-x: 2px;
+    background-repeat: no-repeat;
+    margin: 2px auto;
+  }
+  .bootstrap-select .dropdown-menu li:nth-child(2) a {
+    background-image: url('./assets/images/langIcons/ru.png');
+    background-size: contain; 
+    background-position-x: 2px;
+    background-repeat: no-repeat;
+    margin: 2px auto;
+  }
+  .bootstrap-select .dropdown-menu li:nth-child(3) a {
+    background-image: url('./assets/images/langIcons/en.png');
+    background-size: contain;
+    background-position-x: 2px;
+    background-repeat: no-repeat;
+    margin: 2px auto;
+  }
+  .filter-option{
+    background-image: url('./assets/images/langIcons/lang.png');
+    background-size: 28px;
+    background-position-x: 2px;
+    background-repeat: no-repeat;
+    margin: 2px auto;
+  }
